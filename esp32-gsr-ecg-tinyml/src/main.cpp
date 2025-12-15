@@ -3,10 +3,10 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "Bautrel-project-1_inferencing.h"
-#include <MPU6050.h>
 
 
 
+const bool DEBUG = false;
 // =========================================================================
 // 1. CONFIGURATION RÉSEAU ET MQTT
 // =========================================================================
@@ -14,20 +14,20 @@
 // Paramètres Wi-Fi
  const char *WIFI_SSID = "iot";
 const char *WIFI_PASSWORD = "iotisis;";
-/* const char *WIFI_SSID = "IoT";
-const char *WIFI_PASSWORD = "jGo2umnNdBHnHSsIVWZYPmatS4c6QrKg"; */
+//  const char *WIFI_SSID = "IoT";
+// const char *WIFI_PASSWORD = "jGo2umnNdBHnHSsIVWZYPmatS4c6QrKg"; 
 
 // Paramètres MQTT
  const char *MQTT_SERVER = "172.18.32.43";
-//const char *MQTT_SERVER = "192.168.1.21";
+// const char *MQTT_SERVER = "192.168.1.21";
 const int MQTT_PORT = 1883;
 const char *MQTT_CLIENT_ID = "ESP32Client_AnalogSlave";
 
 // Topics
 const char *TOPIC_SYSTEM_STATE = "system/state";
-const char *TOPIC_PUB_BIOMETRICS = "esp32/slave/capteurs/biometrie";
-const char *TOPIC_PUB_CLASSIFICATION = "esp32/slave/ia/classification";
-const long PUBLISH_INTERVAL_MS = 2000;
+const char *TOPIC_PUB_BIOMETRICS = "esp32/GSR-ECG-TINYML/capteurs/biometrie";
+const char *TOPIC_PUB_CLASSIFICATION = "esp32/GSR-ECG-TINYML/ia/classification";
+const long PUBLISH_INTERVAL_MS = 50;
 const long INFERENCE_INTERVAL_MS = 2000; // Intervalle d'inférence IA
 
 
@@ -163,8 +163,10 @@ void loop() {
     client.publish(TOPIC_PUB_CLASSIFICATION, (char*)aiClassification);
 
     // Afficher dans le moniteur série
+    if(DEBUG){
     Serial.printf("KY039: %d | GSR: %d | Readings OK: %s | IA: %s\n", 
                 ky039Value, gsrValue, sensorsReadingOk ? "YES" : "NO", (char*)aiClassification);
+    }
   }  
 }
 

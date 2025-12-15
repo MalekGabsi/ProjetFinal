@@ -5,6 +5,7 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 
+const bool DEBUG = false;
 // =========================================================================
 // 1. CONFIGURATION RÉSEAU ET MQTT
 // =========================================================================
@@ -12,11 +13,11 @@
 // Paramètres Wi-Fi 
  const char *WIFI_SSID = "iot";
 const char *WIFI_PASSWORD = "iotisis;"; 
-/* const char *WIFI_SSID = "IoT";
-const char *WIFI_PASSWORD = "jGo2umnNdBHnHSsIVWZYPmatS4c6QrKg"; */
+// const char *WIFI_SSID = "IoT";
+// const char *WIFI_PASSWORD = "jGo2umnNdBHnHSsIVWZYPmatS4c6QrKg";
 
 // Paramètres MQTT
-//const char *MQTT_SERVER = "192.168.1.21";
+// const char *MQTT_SERVER = "192.168.1.21";
  const char *MQTT_SERVER = "172.18.32.43";
 
 const int MQTT_PORT = 1883;
@@ -26,11 +27,11 @@ const char *MQTT_CLIENT_ID = "ESP32Client_Master";
 const char *TOPIC_SYSTEM_STATE = "system/state";
 
 // Topics de publication
-const char *TOPIC_PUB_BUTTON1 = "esp32/master/button1";
-const char *TOPIC_PUB_BUTTON2 = "esp32/master/button2";
-const char *TOPIC_PUB_BUTTON3 = "esp32/master/button3";
-const char *TOPIC_PUB_BIOMETRICS = "esp32/master/capteur/biometrie";
-const long PUBLISH_INTERVAL_MS = 2000;
+const char *TOPIC_PUB_BUTTON1 = "esp32/HeartRate-Oxymeter/button1";
+const char *TOPIC_PUB_BUTTON2 = "esp32/HeartRate-Oxymeter/button2";
+const char *TOPIC_PUB_BUTTON3 = "esp32/HeartRate-Oxymeter/button3";
+const char *TOPIC_PUB_BIOMETRICS = "esp32/HeartRate-Oxymeter/capteur/biometrie";
+const long PUBLISH_INTERVAL_MS = 500;
 
 // =========================================================================
 // 2. CONFIGURATION MATÉRIELLE (PINOUT)
@@ -55,13 +56,6 @@ const int HR_SENSOR_I2C_ADDRESS = 0x57;
 // 3. STRUCTURES ET VARIABLES GLOBALES D'ÉTAT
 // =========================================================================
 
-// Structure des données lues depuis l'esclave I2C
-struct SlaveData_t
-{
-  int ky039Raw;
-  int gsrRaw;
-};
-SlaveData_t slaveData;
 
 // Variables de la bibliothèque MQTT/WiFi
 WiFiClient espClient;
@@ -89,7 +83,7 @@ TaskHandle_t xTaskLedGreenHandle = NULL;
 void initializeWiFi();
 void handleMqttMessage(char *topic, byte *message, unsigned int length);
 void ensureMqttConnection();
-SlaveData_t readSlaveData();
+
 
 // Tâches FreeRTOS (Core 1)
 void vTaskLedStatusMQTT(void *pvParameters);
@@ -109,7 +103,6 @@ void setup()
   pinMode(PIN_LED_GREEN, OUTPUT);
   pinMode(PIN_BUTTON1, INPUT_PULLUP);
   pinMode(PIN_BUTTON2, INPUT_PULLUP);
-  pinMode(PIN_BUTTON3, INPUT_PULLUP);
   
   // Démarrer les tâches de gestion des LEDs sur le Core 1
   xTaskCreatePinnedToCore(
@@ -167,19 +160,18 @@ void loop()
     // Publier l'état des boutons
     // Note : Le polling des boutons est moins réactif que les interruptions,
     // mais suffisant pour cet intervalle.
-    Serial.println("Publication état boutons...");
-    Serial.printf("Button1: %s | Button2: %s | Button3: %s\n",
+    if(DEBUG){
+      Serial.println("Publication état boutons...");
+      Serial.printf("Button1: %s | Button2: %s | Button3: %s\n",
                   (digitalRead(PIN_BUTTON1) == LOW) ? "down" : "up",
-                  (digitalRead(PIN_BUTTON2) == LOW) ? "down" : "up",
-                  (digitalRead(PIN_BUTTON3) == LOW) ? "down" : "up");
+                  (digitalRead(PIN_BUTTON2) == LOW) ? "down" : "up");
+    }
     if (digitalRead(PIN_BUTTON1) == LOW) client.publish(TOPIC_PUB_BUTTON1, "down");
     else client.publish(TOPIC_PUB_BUTTON1, "up");
 
     if (digitalRead(PIN_BUTTON2) == LOW) client.publish(TOPIC_PUB_BUTTON2, "down");
     else client.publish(TOPIC_PUB_BUTTON2, "up");
 
-    if (digitalRead(PIN_BUTTON3) == LOW) client.publish(TOPIC_PUB_BUTTON3, "down");
-    else client.publish(TOPIC_PUB_BUTTON3, "up");
 
     // Lecture des capteurs
     hrSensor.getHeartbeatSPO2();
@@ -194,12 +186,9 @@ void loop()
       sensorsReady = false;
     }
 
-    slaveData = readSlaveData();
 
     // Construction JSON (Utilisation des variables volatiles à ce point)
     String payload = "{";
-    payload += "\"GSR_RAW\":" + String(slaveData.gsrRaw) + ",";
-    payload += "\"BPM_RAW\":" + String(slaveData.ky039Raw) + ",";
     payload += "\"HR_OXI\":" + String(bpmValue) + ",";
     payload += "\"SpO2\":" + String(spo2Value) + ",";
     payload += "\"Temp\":" + String(tempCValue, 1);
@@ -209,8 +198,10 @@ void loop()
     client.publish(TOPIC_PUB_BIOMETRICS, payload.c_str());
 
     // Logs
-    Serial.printf("HR: %d | SpO2: %d | Temp: %.1f°C | GSR: %d | KY039: %d\n", 
-                  bpmValue, spo2Value, tempCValue, slaveData.gsrRaw, slaveData.ky039Raw);
+    if(DEBUG){
+      Serial.printf("HR: %d | SpO2: %d | Temp: %.1f°C |\n", 
+                    bpmValue, spo2Value, tempCValue);
+    }
   }
 }
 
@@ -295,29 +286,6 @@ void handleMqttMessage(char *topic, byte *message, unsigned int length)
   }
 }
 
-/**
- * @brief Lit les données binaires depuis l'esclave I2C.
- * @return SlaveData_t Structure contenant les données lues.
- */
-SlaveData_t readSlaveData()
-{
-  SlaveData_t data = {-1, -1};
-  int size = sizeof(SlaveData_t);
-
-  Wire.requestFrom(I2C_SLAVE_ADDR, size);
-  delay(10); 
-
-  if (Wire.available() >= size)
-  {
-    Wire.readBytes((byte *)&data, size);
-  }
-  else
-  {
-    Serial.println("[I2C] Error: Data not received from slave.");
-  }
-
-  return data;
-}
 
 // =========================================================================
 // 7. TÂCHES FREERTOS
