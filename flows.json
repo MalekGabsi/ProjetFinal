@@ -1,0 +1,1975 @@
+[
+    {
+        "id": "d1696f614fef1d63",
+        "type": "tab",
+        "label": "Gestion System",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "678b339dab9b7b13",
+        "type": "tab",
+        "label": "GEstion dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "15a61882ec828036",
+        "type": "mqtt-broker",
+        "name": "Lucas",
+        "broker": "192.168.1.21",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "984e788ac49f87d8",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "172.18.32.43",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "3d0b33840b61a959",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "172.18.32.4",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "20d22e2b0f6dd704",
+        "type": "mqtt-broker",
+        "name": "brocker",
+        "broker": "172.18.32.43",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "795bf448bb83b6e8",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "c20cc05d4cc85dfb",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "28e165628fd70b37",
+        "type": "ui-group",
+        "name": "Controls",
+        "page": "",
+        "width": "2",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "2dffe39e2b8e59ae",
+        "type": "ui-spacer",
+        "group": "",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 1,
+        "width": 1,
+        "height": 1,
+        "className": ""
+    },
+    {
+        "id": "2cf8a4a317c534c3",
+        "type": "ui-group",
+        "name": "affichage classification",
+        "page": "",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "332b9a43ca9fcdf2",
+        "type": "ui-group",
+        "name": "affichage courbe",
+        "page": "",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "690f5fe898665788",
+        "type": "mqtt-broker",
+        "name": "Lucas",
+        "broker": "192.168.1.21",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a662e392d3ac0f42",
+        "type": "ui-page",
+        "name": "affichage projet",
+        "ui": "795bf448bb83b6e8",
+        "path": "/page3",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "c20cc05d4cc85dfb",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "6d809924060f649b",
+        "type": "ui-group",
+        "name": "System",
+        "page": "a662e392d3ac0f42",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "290e22d5fea277a2",
+        "type": "ui-group",
+        "name": "Courbe",
+        "page": "a662e392d3ac0f42",
+        "width": "12",
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "49eb512a678ed00e",
+        "type": "ui-group",
+        "name": "Musique",
+        "page": "a662e392d3ac0f42",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "c0758621b5505444",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "172.18.32.43",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "22d7fc023ec588e9",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": 8086,
+        "protocol": "http",
+        "database": "isis",
+        "name": "BDD",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "http://localhost:8086",
+        "timeout": 10,
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "91cb926bf8a0b1e9",
+        "type": "mqtt in",
+        "z": "d1696f614fef1d63",
+        "name": "",
+        "topic": "esp32/HeartRate-Oxymeter/button1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "15a61882ec828036",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 520,
+        "y": 240,
+        "wires": [
+            [
+                "516146e59aab2d35",
+                "175f0ca72bc643f3"
+            ]
+        ]
+    },
+    {
+        "id": "952877381c4dcba5",
+        "type": "mqtt out",
+        "z": "d1696f614fef1d63",
+        "name": "",
+        "topic": "system/state",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "15a61882ec828036",
+        "x": 1030,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "516146e59aab2d35",
+        "type": "function",
+        "z": "d1696f614fef1d63",
+        "name": "function 1",
+        "func": "if(msg.payload==\"up\")\n{\n    msg.payload=\"on\"\n}\nelse{\n    msg.payload=\"off\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 240,
+        "wires": [
+            [
+                "952877381c4dcba5",
+                "15027674fc74d400",
+                "956f8338036c2b03"
+            ]
+        ]
+    },
+    {
+        "id": "175f0ca72bc643f3",
+        "type": "debug",
+        "z": "d1696f614fef1d63",
+        "name": "debug 8",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "15027674fc74d400",
+        "type": "debug",
+        "z": "d1696f614fef1d63",
+        "name": "debug 9",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "36e1ac39f462522e",
+        "type": "comment",
+        "z": "d1696f614fef1d63",
+        "name": "Action du bouton 1 sur l'esp32 master, active ou desactive le system",
+        "info": "Action du bouton 1 sur l'esp32 master, active ou desactive le system",
+        "x": 620,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e0f4604e786966c2",
+        "type": "mqtt in",
+        "z": "d1696f614fef1d63",
+        "name": "",
+        "topic": "esp32/HeartRate-Oxymeter/button2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "15a61882ec828036",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 360,
+        "y": 540,
+        "wires": [
+            [
+                "f36f23ed1811f073",
+                "d57d1b46e92390c3"
+            ]
+        ]
+    },
+    {
+        "id": "009dcb8ffdeed4b1",
+        "type": "mqtt in",
+        "z": "d1696f614fef1d63",
+        "name": "",
+        "topic": "esp32/GSR-ECG-TINYML/ia/classification",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "15a61882ec828036",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 440,
+        "y": 640,
+        "wires": [
+            [
+                "2cad77ec33815b0c"
+            ]
+        ]
+    },
+    {
+        "id": "2cad77ec33815b0c",
+        "type": "function",
+        "z": "d1696f614fef1d63",
+        "name": "function 3",
+        "func": "let ma_valeur = global.get('button2');\nlet msg1 = null;\nlet msg2 = null;\n// --- Logique principale : Si la condition globale est remplie ---\nif(ma_valeur === \"up\")\n{\n    let ma_valeur2 = global.get('boucle');\n    // On vérifie le message entrant (l'émotion)\n    if(msg.payload === \"fear\")\n    {\n        msg.payload = \"on\";\n        msg1=msg;\n        if(ma_valeur2===\"off\")\n        {\n            msg.payload=\"on\"\n            msg2=msg;\n            \n        }\n    }\n    else // Toute autre émotion\n    {\n        msg.payload = \"off\";\n        msg1 = msg;\n    }\n    \n\n    \n    // Le message est modifié et renvoyé à la sortie 1\n    return [msg1, msg2];\n}\n\n// --- Logique secondaire : Si la condition globale n'est pas remplie ---\nelse\n{\n    // Si la valeur n'est PAS \"up\", on ne fait rien ou on envoie \"off\".\n    // Si vous voulez envoyer \"off\" :\n    msg.payload = \"off\";\n    \n    return [msg, msg];\n    \n    // Si vous préférez ne rien envoyer (recommandé pour ne pas surcharger le flux):\n    // return null; \n}\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 640,
+        "wires": [
+            [
+                "46f5adb6ea63e100"
+            ],
+            [
+                "5acce5231ba8d98c"
+            ]
+        ]
+    },
+    {
+        "id": "5acce5231ba8d98c",
+        "type": "mqtt out",
+        "z": "d1696f614fef1d63",
+        "name": "",
+        "topic": "esp32/haut_parleur/play",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "15a61882ec828036",
+        "x": 1170,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "f02bfc659b0e1bc6",
+        "type": "inject",
+        "z": "d1696f614fef1d63",
+        "name": "on",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "on",
+        "payloadType": "str",
+        "x": 770,
+        "y": 740,
+        "wires": [
+            [
+                "5acce5231ba8d98c"
+            ]
+        ]
+    },
+    {
+        "id": "54e55d5b558c2662",
+        "type": "inject",
+        "z": "d1696f614fef1d63",
+        "name": "off",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "off",
+        "payloadType": "str",
+        "x": 770,
+        "y": 800,
+        "wires": [
+            [
+                "5acce5231ba8d98c"
+            ]
+        ]
+    },
+    {
+        "id": "fe83fd1b20266be0",
+        "type": "inject",
+        "z": "d1696f614fef1d63",
+        "name": "on",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "on",
+        "payloadType": "str",
+        "x": 770,
+        "y": 360,
+        "wires": [
+            [
+                "952877381c4dcba5"
+            ]
+        ]
+    },
+    {
+        "id": "a2f4a0f78b7c364f",
+        "type": "inject",
+        "z": "d1696f614fef1d63",
+        "name": "off",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "off",
+        "payloadType": "str",
+        "x": 770,
+        "y": 420,
+        "wires": [
+            [
+                "952877381c4dcba5"
+            ]
+        ]
+    },
+    {
+        "id": "46f5adb6ea63e100",
+        "type": "mqtt out",
+        "z": "d1696f614fef1d63",
+        "name": "",
+        "topic": "esp32/haut_parleur/boucle",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "15a61882ec828036",
+        "x": 1180,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "f36f23ed1811f073",
+        "type": "change",
+        "z": "d1696f614fef1d63",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "button2",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f814ddc8c37064b1",
+        "type": "mqtt in",
+        "z": "d1696f614fef1d63",
+        "name": "",
+        "topic": "esp32/haut_parleur/boucle",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "15a61882ec828036",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1150,
+        "y": 460,
+        "wires": [
+            [
+                "6d3cc88029be701b",
+                "3b4ce379d10863b0",
+                "5aea87e641cb3f99"
+            ]
+        ]
+    },
+    {
+        "id": "6d3cc88029be701b",
+        "type": "change",
+        "z": "d1696f614fef1d63",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "boucle",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1440,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "55a348d6e6cca3ce",
+        "type": "mqtt in",
+        "z": "d1696f614fef1d63",
+        "name": "",
+        "topic": "esp32/haut_parleur/play",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "15a61882ec828036",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1150,
+        "y": 520,
+        "wires": [
+            [
+                "bec6dd5f92f9674f",
+                "49e1a033b663c78c"
+            ]
+        ]
+    },
+    {
+        "id": "bec6dd5f92f9674f",
+        "type": "change",
+        "z": "d1696f614fef1d63",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "play",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1430,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "956f8338036c2b03",
+        "type": "ui-template",
+        "z": "d1696f614fef1d63",
+        "group": "6d809924060f649b",
+        "page": "",
+        "ui": "",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<h2>State</h2>\n\n<div id=\"emotion-display\" ng-style=\"{'background-color': white)}\">\n\n    <span class=\"emotion-text\" ng-style=\"{'color': black}\">{{msg.payload}}</span>\n\n</div>\n\n<style>\n    /* Style général du conteneur (le rectangle) */\n    #emotion-display {\n        width: 100%;\n        height: 100px;\n\n        /* Centrage du contenu */\n        display: flex;\n        justify-content: center;\n        align-items: center;\n\n        /* Style visuel */\n        border: 3px solid #1e5a70;\n        border-radius: 8px;\n        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);\n        /* Transition pour un changement de couleur de fond plus doux */\n        transition: background-color 0.5s ease;\n    }\n\n    /* Style du texte (l'émotion) */\n    .emotion-text {\n        font-size: 32px;\n        font-weight: bold;\n        text-transform: uppercase;\n        letter-spacing: 2px;\n        /* La couleur réelle sera définie par ng-style ci-dessus */\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1020,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "49e1a033b663c78c",
+        "type": "ui-template",
+        "z": "d1696f614fef1d63",
+        "group": "49eb512a678ed00e",
+        "page": "",
+        "ui": "",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<h2>Play</h2>\n\n<span class=\"status-value status-{{msg.payload}}\">\n    {{msg.payload}}\n    </span>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1400,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3b4ce379d10863b0",
+        "type": "ui-template",
+        "z": "d1696f614fef1d63",
+        "group": "49eb512a678ed00e",
+        "page": "",
+        "ui": "",
+        "name": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<h2>Boucle</h2>\n\n<span class=\"status-value status-{{msg.payload}}\">\n    {{msg.payload}}\n</span>\n\n<style>\n/* Style général de l'élément d'affichage */\n/* On utilise la classe .status-value */\n.status-value {\n    /* Si vous voulez fixer la largeur via CSS (moins recommandé que la grille) */\n    width: 100%; \n    \n    height: 100px;\n    \n    /* Centrage du contenu */\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    \n    /* Style visuel */\n    border: 3px solid #1e5a70;\n    border-radius: 8px;\n    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);\n\n    /* Styles pour la valeur */\n    font-weight: bold;\n    font-size: 20px;\n}\n\n/* Vous devez toujours définir les classes dynamiques (status-on, status-off) \n   dans le ui_template de l'en-tête (HEAD) */\n/* Exemple : */\n.status-on, .status-up {\n    background-color: #27ae60 ; /* Vert émeraude */\n}\n\n/* Condition FAUX/INACTIF : 'off' ou 'down' -> ROUGE */\n.status-off, .status-down {\n    background-color: #c0392b ; /* Rouge alizarine */\n}\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1400,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d57d1b46e92390c3",
+        "type": "ui-template",
+        "z": "d1696f614fef1d63",
+        "group": "49eb512a678ed00e",
+        "page": "",
+        "ui": "",
+        "name": "",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<h2>Button2</h2>\n\n<span class=\"status-value status-{{msg.payload}}\">{{msg.payload}}</span>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 640,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5aea87e641cb3f99",
+        "type": "debug",
+        "z": "d1696f614fef1d63",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1380,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "0d52cba2afa9517a",
+        "type": "mqtt in",
+        "z": "678b339dab9b7b13",
+        "name": "",
+        "topic": "esp32/HeartRate-Oxymeter/capteur/biometrie",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "15a61882ec828036",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 420,
+        "wires": [
+            [
+                "9e61c3aaeb5df347",
+                "f966a0a10e57cddf",
+                "1656f7cd9af26271",
+                "fb397104a7272c01"
+            ]
+        ]
+    },
+    {
+        "id": "0222a8c12d4f48f9",
+        "type": "mqtt in",
+        "z": "678b339dab9b7b13",
+        "name": "",
+        "topic": "esp32/GSR-ECG-TINYML/capteurs/biometrie",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "15a61882ec828036",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 1000,
+        "wires": [
+            [
+                "01a52832934df52b",
+                "1016b01b2c5b30ba",
+                "e16b49e31663f418"
+            ]
+        ]
+    },
+    {
+        "id": "2ce0ae345a190222",
+        "type": "mqtt in",
+        "z": "678b339dab9b7b13",
+        "name": "",
+        "topic": "esp32/GSR-ECG-TINYML/ia/classification",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "15a61882ec828036",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 280,
+        "y": 1300,
+        "wires": [
+            [
+                "3fdbb350e359e9d6",
+                "7b02396085ee264e"
+            ]
+        ]
+    },
+    {
+        "id": "9e61c3aaeb5df347",
+        "type": "debug",
+        "z": "678b339dab9b7b13",
+        "name": "debug 10",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "01a52832934df52b",
+        "type": "debug",
+        "z": "678b339dab9b7b13",
+        "name": "debug 11",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "3fdbb350e359e9d6",
+        "type": "debug",
+        "z": "678b339dab9b7b13",
+        "name": "debug 12",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "e16b49e31663f418",
+        "type": "function",
+        "z": "678b339dab9b7b13",
+        "name": "KY039",
+        "func": "var msg = {\n    payload: msg.payload.KY039,\n    topic: \"KY039\" \n};\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 1140,
+        "wires": [
+            [
+                "5c33f51d799a39b5",
+                "0ce9821fa686fa5e",
+                "0172fb5aecfa0f0e"
+            ]
+        ]
+    },
+    {
+        "id": "1016b01b2c5b30ba",
+        "type": "function",
+        "z": "678b339dab9b7b13",
+        "name": "GSR",
+        "func": "var msg = {\n    payload: msg.payload.GSR,\n    topic: \"GSR\" \n};\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 1000,
+        "wires": [
+            [
+                "88e5bdadecc94c9c",
+                "d4082679e274bf39",
+                "f47739dccf59d352"
+            ]
+        ]
+    },
+    {
+        "id": "5c33f51d799a39b5",
+        "type": "debug",
+        "z": "678b339dab9b7b13",
+        "name": "debug 13",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "88e5bdadecc94c9c",
+        "type": "debug",
+        "z": "678b339dab9b7b13",
+        "name": "debug 14",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "0ce9821fa686fa5e",
+        "type": "ui-chart",
+        "z": "678b339dab9b7b13",
+        "group": "290e22d5fea277a2",
+        "name": "KY039",
+        "label": "KY039",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "30",
+        "removeOlderUnit": "1",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "smooth",
+        "x": 750,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d4082679e274bf39",
+        "type": "ui-chart",
+        "z": "678b339dab9b7b13",
+        "group": "290e22d5fea277a2",
+        "name": "GSR",
+        "label": "GSR",
+        "order": 5,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "600",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "1",
+        "removeOlderUnit": "60",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "smooth",
+        "x": 730,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1656f7cd9af26271",
+        "type": "function",
+        "z": "678b339dab9b7b13",
+        "name": "SpO2",
+        "func": "var msg = {\n    payload: msg.payload.SpO2,\n    topic: \"SpO2\" \n};\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 480,
+        "wires": [
+            [
+                "8bfec273e9acf82b",
+                "ffbe661a666fc357",
+                "f0f3bc397088ecb9",
+                "997423bb40244b40"
+            ]
+        ]
+    },
+    {
+        "id": "f966a0a10e57cddf",
+        "type": "function",
+        "z": "678b339dab9b7b13",
+        "name": "HR_OXI",
+        "func": "var msg = {\n    payload: msg.payload.HR_OXI,\n    topic: \"HR_OXI\" \n};\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 300,
+        "wires": [
+            [
+                "fd089fd4ebb52cd3",
+                "8a814287a3de8136",
+                "e4c48c4954131ca0",
+                "47dacbf1f7514cf7"
+            ]
+        ]
+    },
+    {
+        "id": "8bfec273e9acf82b",
+        "type": "debug",
+        "z": "678b339dab9b7b13",
+        "name": "debug 15",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "fd089fd4ebb52cd3",
+        "type": "debug",
+        "z": "678b339dab9b7b13",
+        "name": "debug 16",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ffbe661a666fc357",
+        "type": "ui-chart",
+        "z": "678b339dab9b7b13",
+        "group": "290e22d5fea277a2",
+        "name": "SpO2",
+        "label": "SpO2",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "70",
+        "ymax": "100",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "10",
+        "removeOlderUnit": "60",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "smooth",
+        "x": 1030,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8a814287a3de8136",
+        "type": "ui-chart",
+        "z": "678b339dab9b7b13",
+        "group": "290e22d5fea277a2",
+        "name": "HeartBeat",
+        "label": "HeartBeat",
+        "order": 4,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "30",
+        "ymax": "200",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "10",
+        "removeOlderUnit": "60",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "smooth",
+        "x": 1040,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fb397104a7272c01",
+        "type": "function",
+        "z": "678b339dab9b7b13",
+        "name": "Temp",
+        "func": "var msg = {\n    payload: msg.payload.Temp,\n    topic: \"Temp\" \n};\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 680,
+        "wires": [
+            [
+                "39023aa5f0591bb6",
+                "48f10c9d9bcff14a",
+                "11c850337ab98590",
+                "70976667a37ff8b1"
+            ]
+        ]
+    },
+    {
+        "id": "39023aa5f0591bb6",
+        "type": "debug",
+        "z": "678b339dab9b7b13",
+        "name": "debug 17",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "48f10c9d9bcff14a",
+        "type": "ui-chart",
+        "z": "678b339dab9b7b13",
+        "group": "290e22d5fea277a2",
+        "name": "Temp",
+        "label": "Température",
+        "order": 3,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "10",
+        "removeOlderUnit": "60",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "smooth",
+        "x": 1070,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "11c850337ab98590",
+        "type": "ui-gauge",
+        "z": "678b339dab9b7b13",
+        "name": "Gauge temp",
+        "group": "6d809924060f649b",
+        "order": 5,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Temperature",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "24",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "34",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "40",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1090,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f0f3bc397088ecb9",
+        "type": "ui-gauge",
+        "z": "678b339dab9b7b13",
+        "name": "SpO2",
+        "group": "6d809924060f649b",
+        "order": 3,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "SpO2",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "90",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "94",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1030,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e4c48c4954131ca0",
+        "type": "ui-gauge",
+        "z": "678b339dab9b7b13",
+        "name": "Gauge HR_OXI",
+        "group": "6d809924060f649b",
+        "order": 4,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "HR_OXI",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "60",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1060,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7b02396085ee264e",
+        "type": "ui-template",
+        "z": "678b339dab9b7b13",
+        "group": "6d809924060f649b",
+        "page": "",
+        "ui": "",
+        "name": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<h2>Émotion</h2>\n\n<div id=\"emotion-display\" ng-style=\"{'background-color': getEmotionColor(msg.payload)}\">\n\n    <span class=\"emotion-text\" ng-style=\"{'color': getTextColor(msg.payload)}\">{{msg.payload}}</span>\n\n</div>\n\n<style>\n    /* Style général du conteneur (le rectangle) */\n    #emotion-display {\n        width: 100%;\n        height: 100px;\n\n        /* Centrage du contenu */\n        display: flex;\n        justify-content: center;\n        align-items: center;\n\n        /* Style visuel */\n        border: 3px solid #1e5a70;\n        border-radius: 8px;\n        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);\n        /* Transition pour un changement de couleur de fond plus doux */\n        transition: background-color 0.5s ease;\n    }\n\n    /* Style du texte (l'émotion) */\n    .emotion-text {\n        font-size: 32px;\n        font-weight: bold;\n        text-transform: uppercase;\n        letter-spacing: 2px;\n        /* La couleur réelle sera définie par ng-style ci-dessus */\n    }\n</style>\n\n<script>\n    (function(scope) {\n        \n        // Fonction pour déterminer la couleur du FOND\n        scope.getEmotionColor = function(emotion) {\n            \n            // 1. Gérer le cas où le message est vide ou non défini\n            if (!emotion) return 'white'; \n            \n            // 2. Nettoyer et normaliser l'entrée\n            const cleanedEmotion = emotion.toString().toLowerCase().trim();\n            \n            // 3. Logique Binaire : Rouge pour 'fear', Blanc pour le reste\n            if (cleanedEmotion === 'fear') {\n                return '#C0392B'; // Rouge foncé\n            } else {\n                return 'white'; // Blanc pour tout le reste\n            }\n        }\n        \n        // Fonction pour déterminer la couleur du TEXTE (pour la lisibilité)\n        scope.getTextColor = function(emotion) {\n            \n            if (!emotion) return 'black'; // Texte noir par défaut\n            \n            const cleanedEmotion = emotion.toString().toLowerCase().trim();\n            \n            // Si le fond est rouge (fear), le texte doit être blanc. Sinon, noir.\n            if (cleanedEmotion === 'fear') {\n                return 'white'; \n            } else {\n                return 'black'; \n            }\n        }\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 580,
+        "y": 1360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "132ccb240eab375a",
+        "type": "inject",
+        "z": "678b339dab9b7b13",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "fear",
+        "payloadType": "str",
+        "x": 270,
+        "y": 1420,
+        "wires": [
+            [
+                "7b02396085ee264e",
+                "4a266c0c555b9104"
+            ]
+        ]
+    },
+    {
+        "id": "4a266c0c555b9104",
+        "type": "debug",
+        "z": "678b339dab9b7b13",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "121279bc65c89866",
+        "type": "influxdb out",
+        "z": "678b339dab9b7b13",
+        "influxdb": "22d7fc023ec588e9",
+        "name": "HeartBeat",
+        "measurement": "HeartBeat",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "isis",
+        "bucket": "isis",
+        "x": 1240,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "47dacbf1f7514cf7",
+        "type": "function",
+        "z": "678b339dab9b7b13",
+        "name": "HR_OXI",
+        "func": "msg.payload = [\n    { Value: msg.payload },\n    {\n        \"source\": \"castre\",\n        \"room\": \"isis\",\n    }\n\n]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 220,
+        "wires": [
+            [
+                "121279bc65c89866"
+            ]
+        ]
+    },
+    {
+        "id": "913f98a1e42cbac7",
+        "type": "influxdb out",
+        "z": "678b339dab9b7b13",
+        "influxdb": "22d7fc023ec588e9",
+        "name": "SpO2",
+        "measurement": "SpO2",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "isis",
+        "bucket": "isis",
+        "x": 1170,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "997423bb40244b40",
+        "type": "function",
+        "z": "678b339dab9b7b13",
+        "name": "SpO2",
+        "func": "msg.payload = [\n    { Value: msg.payload },\n    {\n        \"source\": \"castre\",\n        \"room\": \"isis\",\n    }\n\n]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 440,
+        "wires": [
+            [
+                "913f98a1e42cbac7"
+            ]
+        ]
+    },
+    {
+        "id": "0395b3b67f00127c",
+        "type": "influxdb out",
+        "z": "678b339dab9b7b13",
+        "influxdb": "22d7fc023ec588e9",
+        "name": "Température",
+        "measurement": "Temperature",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "isis",
+        "bucket": "isis",
+        "x": 1250,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "70976667a37ff8b1",
+        "type": "function",
+        "z": "678b339dab9b7b13",
+        "name": "Temp",
+        "func": "msg.payload = [\n    { Value: msg.payload },\n    {\n        \"source\": \"castre\",\n        \"room\": \"isis\",\n    }\n\n]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 640,
+        "wires": [
+            [
+                "0395b3b67f00127c"
+            ]
+        ]
+    },
+    {
+        "id": "ef2648a115da15a9",
+        "type": "influxdb out",
+        "z": "678b339dab9b7b13",
+        "influxdb": "22d7fc023ec588e9",
+        "name": "GSR",
+        "measurement": "GSR",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "isis",
+        "bucket": "isis",
+        "x": 870,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "f47739dccf59d352",
+        "type": "function",
+        "z": "678b339dab9b7b13",
+        "name": "GSR",
+        "func": "msg.payload = [\n    { Value: msg.payload },\n    {\n        \"source\": \"castre\",\n        \"room\": \"isis\",\n    }\n\n]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 960,
+        "wires": [
+            [
+                "ef2648a115da15a9"
+            ]
+        ]
+    },
+    {
+        "id": "5572b64633e6e5c3",
+        "type": "influxdb out",
+        "z": "678b339dab9b7b13",
+        "influxdb": "22d7fc023ec588e9",
+        "name": "KY039",
+        "measurement": "GSR",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "isis",
+        "bucket": "isis",
+        "x": 890,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "0172fb5aecfa0f0e",
+        "type": "function",
+        "z": "678b339dab9b7b13",
+        "name": "KY039",
+        "func": "msg.payload = [\n    { Value: msg.payload },\n    {\n        \"source\": \"castre\",\n        \"room\": \"isis\",\n    }\n\n]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 1100,
+        "wires": [
+            [
+                "5572b64633e6e5c3"
+            ]
+        ]
+    },
+    {
+        "id": "e8877a343c5c6723",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.28.0",
+            "node-red-contrib-influxdb": "0.7.0"
+        }
+    }
+]
